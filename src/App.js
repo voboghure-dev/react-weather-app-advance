@@ -13,6 +13,10 @@ function App() {
     `${process.env.REACT_APP_ICON_URL}10n@2x.png`
   );
 
+  const handleSubmit='';
+  const handleChange='';
+  const myIP='';
+
   return (
     <div className='bg-gray-800 flex items-center justify-center w-screen h-screen py-10'>
       <div className='flex w-3/4 min-h-full rounded-3x1 shadow-lg m-auto bg-gray-100'>
