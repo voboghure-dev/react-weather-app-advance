@@ -9,7 +9,7 @@ export default function DetailCard({ weather_icon, data }) {
         <p className='font-bold text-5x1 text-pink-800 mb-2'>
           {Math.round(main.temp)}&deg;C
         </p>
-        <p className='text-4x1 text-gray-800 tracking-widest'>
+        <p className='text-4xl text-gray-800 tracking-widest'>
           {weather[0].main}
           <img src={weather_icon} alt='' className='w-1/4 inline' />
         </p>
@@ -20,7 +20,7 @@ export default function DetailCard({ weather_icon, data }) {
       </div>
       <div className='my-2 border-l-2 border-gray-100 p-2'>
         <p className='text-gray-400 text-lg'>
-          Feel Like: {Math.round(main.feel_like)}&deg;C
+          Feels Like: {Math.round(main.feels_like)}&deg;C
         </p>
         <p className='text-gray-400 text-lg'>Humidity: {main.humidity}%</p>
         <p className='text-gray-400 text-lg'>Cloud Cover: {clouds.all}</p>

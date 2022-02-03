@@ -8,12 +8,12 @@ export default function SummaryCard({ day }) {
   return (
     <li className='container p-4 flex items-center justify-center bg-gray-200 rounded-lg my-auto mr-1'>
       <div className='my-auto'>
-        <p className='font-bold text-3x1 text-ping-600 mb-2'>
+        <p className='font-bold text-3xl text-ping-600 mb-2'>
           {Math.round(day.main.temp)}&deg;C
         </p>
-        <p className='text-2x1 text-gray-800 tracking-widest'>
+        <p className='text-2xl text-gray-800 tracking-widest'>
           {day.weather[0].main}
-          <img src={day_icon} alt='' className='w-1 inline' />
+          <img src={day_icon} alt='' className='w-1/4 inline' />
         </p>
         <p className='text-gray-400 text-xs uppercase tracking-widest'>
           {day.weather[0].description}
