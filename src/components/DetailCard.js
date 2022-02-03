@@ -18,12 +18,18 @@ export default function DetailCard({ weather_icon, data }) {
         </p>
         <p className='tracking-wider'>{moment().format('dddd MMM YYYY')}</p>
       </div>
-      <div className="my-2 border-l-2 border-gray-100 p-2">
-        <p className="text-gray-400 text-lg">RealFeel: {Math.round(main.feel_like)}&deg;C</p>
-        <p className="text-gray-400 text-lg"></p>
-        <p className="text-gray-400 text-lg"></p>
-        <p className="text-gray-400 text-lg"></p>
-        <p className="text-gray-400 text-lg"></p>
+      <div className='my-2 border-l-2 border-gray-100 p-2'>
+        <p className='text-gray-400 text-lg'>
+          Feel Like: {Math.round(main.feel_like)}&deg;C
+        </p>
+        <p className='text-gray-400 text-lg'>Humidity: {main.humidity}%</p>
+        <p className='text-gray-400 text-lg'>Cloud Cover: {clouds.all}</p>
+        <p className='text-gray-400 text-lg'>
+          Min. Temp: {Math.round(main.temp_min)}&deg;C
+        </p>
+        <p className='text-gray-400 text-lg'>
+          Max. Temp: {Math.round(main.temp_max)}&deg;C
+        </p>
       </div>
     </div>
   );
